@@ -1,72 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievements</title>
     <style>
         body {
-            background-color: #a4969b; /* Soft purple background for the overall page */
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #000000; /* Make text color white for better contrast */
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #eef0f2; /* Light background for the container */
+            background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        h1 {
-            text-align: center;
-            background-color: #f4faff; /* Darker purple for the header */
-            color: #000000; /* White text for better readability */
-            padding: 20px;
-            border-radius: 10px;
-            grid-column: 1 / -1; /* Ensure the header spans all columns */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-        }
-        .achievement {
-            background-color: #f4faff; /* Slightly lighter purple for cards */
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            gap: 20px;
+        }
+        .title {
             text-align: center;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Consistent shadow for cards */
+            background-color: #e8eef2;
+            font-weight: bold;
+            font-size: larger;
+            color: #000000;
+            padding: 10px 0;
+            border-radius: 8px;
+            margin: -20px -20px 20px -20px; /* Align with the container's edge */
+        }
+        .achievement {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
         }
         .achievement img {
-            width: 100%;
-            max-width: 250px; /* Adjust image size appropriately */
+            flex: 1;
+            max-width: 200px;
             border-radius: 5px;
-            margin-bottom: 15px;
         }
-        .achievement p {
-            color: #000000; /* White text on the colored background */
-            margin: 0;
+        .achievement-info {
+            flex: 2;
+            color: #666;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .achievement {
+                flex-direction: column;
+                text-align: center;
+            }
+            .achievement img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>My Achievements</h1>
-        
+        <div class="title">My Achievements</div>
         <div class="achievement">
             <img src="a1.jpg" alt="Achievement 1">
-            <p>
-
-                "Gratefully acknowledging my award for dedication and skill in 'Fundamentals of Programming - C Language' at GITAM University, a milestone of hard work and passion in my coding journey. This honor underlines my commitment to lifelong learning, excellence, and embracing new challenges with unwavering enthusiasm and determination."
-            </p>
+            <div class="achievement-info">
+                <p>
+                    "Gratefully acknowledging my award for dedication and skill in 'Fundamentals of Programming - C Language' at GITAM University, a milestone of hard work and passion in my coding journey. This honor underlines my commitment to lifelong learning, excellence, and embracing new challenges with unwavering enthusiasm and determination."
+                </p>
+            </div>
         </div>
-        
-        <!-- Add more achievements as needed -->
-
+        <!-- Add more achievement sections here if needed, following the same structure -->
     </div>
 </body>
 </html>
