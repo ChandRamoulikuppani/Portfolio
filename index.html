@@ -12,35 +12,59 @@
             background-color: #878c8f;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
 
         .profile-section {
             background-color: #f7f7f7;
-            padding: 20px;
+            padding: 30px;
             margin-bottom: 20px;
             border-radius: 10px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
+
+        .profile-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
         .profile-section img.profile {
             border-radius: 50%;
             width: 200px;
             height: 200px;
             margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .profile-section img.profile:hover {
+            transform: scale(1.1);
         }
 
         .profile-section .name {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             margin-bottom: 10px;
+            color: #000000;
         }
 
         .profile-section .bio {
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 20px;
+            font-style: italic;
         }
 
         .profile-section .buttons a {
             margin: 0 10px;
+            color: #000;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .profile-section .buttons a:hover {
+            transform: scale(1.2);
         }
 
         .section {
@@ -48,25 +72,49 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .section h2 {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
         }
 
         .section p, .section ul {
             font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        .section ul li {
             margin-bottom: 10px;
         }
 
         .contact-icons a.contact-icon {
-            color: black;
+            color: #000000;
             margin-right: 15px;
+            transition: color 0.3s;
+        }
+
+        .contact-icons a.contact-icon:hover {
+            color: #000000;
         }
 
         .contact-icons a.contact-icon:last-child {
             margin-right: 0;
         }
+
         @media (max-width: 768px) {
             .navbar-nav .nav-link {
                 font-size: 16px;
@@ -74,6 +122,13 @@
             }
             .navbar-brand {
                 font-size: 20px;
+            }
+            .profile-section img.profile {
+                width: 150px;
+                height: 150px;
+            }
+            .section h2 {
+                font-size: 24px;
             }
         }
     </style>
@@ -105,7 +160,7 @@
     </nav>
     <div class="container chandu text-center">
         <div class="profile-section">
-            <img class="profile img-fluid" src="https://media.licdn.com/dms/image/D5603AQFkEfdlTEzD5g/profile-displayphoto-shrink_400_400/0/1694406567028?e=1718236800&v=beta&t=g2_VJuSTOCj0vhygemrADP7wzqHVRo-O4S50HqAR1Fs" alt="Your Name">
+            <img class="profile img-fluid" src="pic.jpg" alt="Your Name">
             <div class="name">CHANDRAMOULI</div>
             <div class="bio">"Committed to pushing the boundaries of what's possible through the intersection of technology and creativity"</div>
             <div class="buttons">
