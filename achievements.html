@@ -24,7 +24,7 @@
         }
         .title {
             text-align: center;
-            background-color: #e8eef2;
+            background-color: #4889b4;
             font-weight: bold;
             font-size: larger;
             color: #000000;
@@ -37,11 +37,22 @@
             gap: 20px;
             align-items: center;
             flex-wrap: wrap;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        .achievement:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
         .achievement img {
             flex: 1;
             max-width: 200px;
             border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .achievement img:hover {
+            transform: scale(1.05);
         }
         .achievement-info {
             flex: 2;
@@ -65,9 +76,7 @@
         <div class="achievement">
             <img src="a1.jpg" alt="Achievement 1">
             <div class="achievement-info">
-                <p>
-                    "Gratefully acknowledging my award for dedication and skill in 'Fundamentals of Programming - C Language' at GITAM University, a milestone of hard work and passion in my coding journey. This honor underlines my commitment to lifelong learning, excellence, and embracing new challenges with unwavering enthusiasm and determination."
-                </p>
+                <p>"Gratefully acknowledging my award for dedication and skill in 'Fundamentals of Programming - C Language' at GITAM University, a milestone of hard work and passion in my coding journey. This honor underlines my commitment to lifelong learning, excellence, and embracing new challenges with unwavering enthusiasm and determination."</p>
             </div>
         </div>
         <!-- Add more achievement sections here if needed, following the same structure -->

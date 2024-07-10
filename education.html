@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #f4f4f4;
-            font-family: 'Roboto', sans-serif; /* Using Roboto font */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -25,23 +25,28 @@
             overflow: hidden;
         }
         .title {
-            background-color: #e8eef2; /* Light blue background for the title */
-            color: #000000;
+            background-color: #007bff; /* Primary color for the title */
+            color: #ffffff;
             padding: 20px;
             font-size: 24px;
             text-align: center;
             margin: 0;
+            border-bottom: 2px solid #0056b3; /* Darker border for separation */
         }
         .education-box {
             padding: 20px;
-            border-bottom: 2px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+        .education-box:hover {
+            background-color: #f9f9f9; /* Light grey hover effect */
         }
         .education-box:last-child {
             border-bottom: none;
         }
         .education-box h2 {
             color: #333;
-            font-weight: 500; /* Slightly bolder for better emphasis */
+            font-weight: 500;
             margin: 0 0 10px 0;
         }
         .education-info {
@@ -49,7 +54,6 @@
             line-height: 1.6;
             margin-bottom: 5px;
         }
-
         @media (max-width: 768px) {
             .title {
                 font-size: 20px;
